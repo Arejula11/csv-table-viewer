@@ -1,71 +1,93 @@
-# csv README
+# CSV Table Viewer for VS Code
 
-This is the README for your extension "csv". After writing up a brief description, we recommend including the following sections.
+Display CSV files as clean, interactive tables inside VS Code.
+
+This extension transforms raw CSV file content into a sortable, easy-to-read HTML table view directly within a VS Code Webview Panel. Perfect for quickly inspecting and understanding large datasets without leaving your editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+  * **Clean Table View:** Converts your comma (`,`) or semicolon (`;`) delimited CSV data into a well-structured, easy-to-read table.
+  * **Automatic Delimiter Detection:** Automatically detects if your file uses commas or semicolons as separators.
+  * **Interactive Sorting:** Sort any column in **ascending** or **descending** order.
+      * **Smart Type Handling:** Correctly sorts columns as **Numbers**, **Text**, or **Dates**.
+      * **European Date Support:** Correctly identifies and sorts dates in common European formats (e.g., `DD/MM/YYYY`, `DD-MM-YYYY`, `DD.MM.YYYY`), in addition to standard ISO format (`YYYY-MM-DD`).
+  * **Quick Access:** Easily open the viewer via the Command Palette, Editor Title Menu, or Right-Click Context Menu.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## How to Use
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 1. Installation
 
-## Requirements
+1.  Open Visual Studio Code.
+2.  Go to the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3.  Search for **CSV Table Viewer** (once published, not yet).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 2. Opening the Viewer
 
-## Extension Settings
+Once the extension is installed, you can open a CSV file as a table in one of three ways:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### A. Command Palette
 
-For example:
+1.  Open any `.csv` file in the editor.
+2.  Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+3.  Type and select: **`CSV Viewer: Open CSV as Table`**.
 
-This extension contributes the following settings:
+#### B. Editor Title Menu (Quick Button) Not Yet Available
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1.  Open any `.csv` file.
+2.  Click the **"Open CSV as Table"** icon (or similar) located on the right side of the editor tab title bar.
 
-## Known Issues
+#### C. Context Menu Not Yet Available
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1.  Right-click anywhere inside an open `.csv` file.
+2.  Select **`Open CSV as Table`** from the menu.
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
+## Development
 
-### 1.0.0
+If you are interested in contributing or building the extension locally:
 
-Initial release of ...
+### Prerequisites
 
-### 1.0.1
+  * Node.js (LTS version recommended)
+  * npm
 
-Fixed issue #.
+### Building and Running
 
-### 1.1.0
+1.  **Clone the repository:**
 
-Added features X, Y, and Z.
+    ```bash
+    git clone [Your Repository URL]
+    cd csv-table-viewer
+    ```
 
----
+2.  **Install dependencies:**
 
-## Following extension guidelines
+    ```bash
+    npm install
+    ```
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+3.  **Compile the extension:**
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+    ```bash
+    npm run compile
+    ```
 
-## Working with Markdown
+4.  **Launch the extension:**
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+      * Press `F5` in VS Code to open a new Extension Development Host window.
+      * Open a `.csv` file in the new window and run the `Open CSV as Table` command.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-## For more information
+## License
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+This project is licensed under the MIT License. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
-**Enjoy!**
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests. Specific areas for improvement include:
+
+  * Filtering and searching capabilities.
+  * More robust column type detection.
+  * Header clicks for sorting (currently uses dropdowns).
