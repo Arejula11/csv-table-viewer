@@ -4,6 +4,8 @@ Display CSV files as clean, interactive tables inside VS Code.
 
 This extension transforms raw CSV file content into a sortable, easy-to-read HTML table view directly within a VS Code Webview Panel. Perfect for quickly inspecting and understanding large datasets without leaving your editor.
 
+![CSV Table Viewer Screenshot](/public/assets/demo.png)
+
 ## Features
 
   * **Clean Table View:** Converts your comma (`,`) or semicolon (`;`) delimited CSV data into a well-structured, easy-to-read table.
@@ -12,6 +14,7 @@ This extension transforms raw CSV file content into a sortable, easy-to-read HTM
       * **Smart Type Handling:** Correctly sorts columns as **Numbers**, **Text**, or **Dates**.
       * **European Date Support:** Correctly identifies and sorts dates in common European formats (e.g., `DD/MM/YYYY`, `DD-MM-YYYY`, `DD.MM.YYYY`), in addition to standard ISO format (`YYYY-MM-DD`).
   * **Quick Access:** Easily open the viewer via the Command Palette, Editor Title Menu, or Right-Click Context Menu.
+  * **Theme Integration:** The table view **automatically matches** your current VS Code theme (light, dark, or high-contrast) for a seamless, native look.
 
 
 ## How to Use
