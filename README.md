@@ -14,12 +14,13 @@
     <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github" alt="GitHub">
   </a>
   <a href="https://www.youtube.com/@are-dev">
-    <img src="https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=flat-square&logo=youtube" alt="YouTube">
+    <img src="https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=flat-square&logo=youtube" alt="YouTube"></a>
 </p>
 
 
 
 ### **Quickly Transform Raw CSV Data into Interactive, Sortable Tables inside VS Code.**
+
 
 This extension is designed for data analysts and developers who need to inspect and analyze CSV file content without leaving the editor. It renders large `.csv` files as a highly interactive, responsive HTML table view directly within a VS Code Webview panel.
 
