@@ -6,7 +6,7 @@
 
 ### **Quickly Transform Raw CSV Data into Interactive, Sortable Tables inside VS Code.**
 
-This extension is designed for data analysts and developers who need to inspect and analyze CSV file content without leaving the editor. It renders large `.csv` or `.txt` files as a highly interactive, responsive HTML table view directly within a VS Code Webview panel.
+This extension is designed for data analysts and developers who need to inspect and analyze CSV file content without leaving the editor. It renders large `.csv` files as a highly interactive, responsive HTML table view directly within a VS Code Webview panel.
 
 ![Demo of CSV Table Viewer](https://github.com/Arejula11/csv-table-view/blob/main/public/assets/demo.png?raw=true)
 
