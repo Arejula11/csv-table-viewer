@@ -73,7 +73,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 // --- Función que crea la webview ---
 function showCsvTable(filePath: string) {
-  const filePathShort = filePath.split('/').pop() || filePath;
+  const filePathShort = filePath.split(/[/\\]/).pop() || filePath;
   const content = fs.readFileSync(filePath, 'utf8');
 
   // Detectar separador
@@ -190,8 +190,8 @@ function showCsvTable(filePath: string) {
     </head>
     <body>
       <div class="container">
+      <h2>${filePathShort}</h2>
         <div class="header">
-          <h2>${filePathShort}</h2>
           <div class="controls">
             <label for="filterColumn" style="font-size: 0.9rem; margin-right: 0.3rem;">Filter by:</label>
             <select id="filterColumn">
